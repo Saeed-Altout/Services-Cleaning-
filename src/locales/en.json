@@ -1,0 +1,9 @@
+{
+    "welcome": "Welcome",
+    "greeting": "Hello, {{name}}!",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "faqs": "FAQs",
+    "contacts": "Contacts"
+}
