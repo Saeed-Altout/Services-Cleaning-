@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/home/Home";
@@ -10,16 +10,6 @@ import Footer from "./components/footer";
 import Loading from "./Loading";
 
 const App: React.FC = () => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-    return () => setIsMounted(false);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
   return (
     <Suspense fallback={<Loading />}>
       <Router>
